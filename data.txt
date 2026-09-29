@@ -1,0 +1,15 @@
+Dataset: https://huggingface.co/datasets/Kramsen/realsense_load_dataset/tree/main
+
+Run from the Assignment1 folder. This creates Assignment1/assignment1.v2i.yolov11/data.yaml,
+which is the path the notebook uses.
+
+--- Linux / macOS ---
+curl -L -o labeled_data.zip https://huggingface.co/datasets/Kramsen/realsense_load_dataset/resolve/main/labeled_data.zip
+unzip -o labeled_data.zip && rm labeled_data.zip
+
+--- Windows (PowerShell or cmd) ---
+curl.exe -L -o labeled_data.zip https://huggingface.co/datasets/Kramsen/realsense_load_dataset/resolve/main/labeled_data.zip
+tar -xf labeled_data.zip
+del labeled_data.zip
+
+yolo11n.pt downloads automatically the first time the code runs.
